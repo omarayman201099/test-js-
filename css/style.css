@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+body {
+    background-color: black;
+}
+
+
+#Home {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    color: #000;
+    position: relative;
+    z-index: 1;
+}
+
+.HomeOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+#leftMenu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+   
+}
+
+.sidenav a {
+
+    text-decoration: none;
+    padding: 5px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    color: white;
+}
+
+
+
+
+#Home h2 {
+    margin-top: 200px;
+
+}
+
+
+
+
+#Home h2,
+p {
+    text-align: center;
+
+}
+
+
+
+
+.sidenav {
+    background-color: #414658;
+}
+
+
+
+
+.sidenav a:hover {
+    color: rgba(204, 196, 196, 0.575);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#home-content {
+    transition: margin-left .5s;
+    padding: 16px;
+    background-color: #fff;
+    height: 100vh;
+    max-width: 100px;
+}
+
+.menu-icon {
+    margin: 20px auto;
+    width: 20px;
+    height: 14px;
+    cursor: pointer;
+    position: relative;
+  }
+  .menu-icon span {
+    background-color: #fff;
+    height: 2px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+  .menu-icon span:first-child {
+    top: 0;
+  }
+  .menu-icon span:nth-child(2) {
+    top: 6px;
+  }
+  .menu-icon span:last-child {
+    top: 12px;
+  }
+  .menu-icon.closebtn span:nth-child(2) {
+    opacity: 0;
+  }
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+ 
+
+
+.img img{
+    width: 85%;
+    
+}
+.img{
+  left: 5%;
+}
+.icons{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 2px;
+}
+
+/* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+.loader {    
+    --r1: 154%;
+    --r2: 68.5%;
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 50%; 
+    background:
+      radial-gradient(var(--r1) var(--r2) at top   ,#0000 79.5%,#000 80%),
+      radial-gradient(var(--r1) var(--r2) at bottom,#000 79.5%,#0000 80%),
+      radial-gradient(var(--r1) var(--r2) at top   ,#0000 79.5%,#000 80%),
+      #ccc;
+    background-size: 50.5% 220%;
+    background-position: -100% 0%,0% 0%,100% 0%;
+    background-repeat:no-repeat;
+    animation: l9 2s infinite linear;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+  @keyframes l9 {
+      33%  {background-position:    0% 33% ,100% 33% ,200% 33% }
+      66%  {background-position: -100%  66%,0%   66% ,100% 66% }
+      100% {background-position:    0% 100%,100% 100%,200% 100%}
+  }
+
+
+
+
+  .links{
+    margin: 20px;
+  }
+    .nav_link{
+    transform: translateY(1000%);
+    transition: .5s;
+  
+
+  }
+  .active{
+    transform: translateY(0%);
+  }
+  .copyRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 15px;
+    transform: translateX(-150%);
+    transition: .5s;
+  }
+  .copyRight p{
+    text-align: left;
+  }
+
+  .active-2{
+    transform: translateX(0%); 
+    transition: .5s;
+  }
+  .meal-layer{
+    width: 100%;
+    height: 100%;
+    background-color: #f9f6f6ca;
+    top: 100%;
+    transition: .5s;
+}
+
+.meal:hover .meal-layer{
+    top: 0;
+ 
+}
+.iconssdad{
+  font-size: 70px;
+  color: #ccc;
+  text-align: center;
+  }
+  .icon-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+
+  #Home h2, p{
+    color: #ccc;
+  }
+
+  #registrationForm{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #registrationForm button{
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    
+  }
+
